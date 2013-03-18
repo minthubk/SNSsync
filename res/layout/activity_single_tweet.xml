@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_head"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/title_bar"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/mm_title_btn_back"
+            android:onClick="back"
+            android:text="返回"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="详情"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_below="@+id/rl_head"
+        android:layout_above="@+id/rl_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/chat_bg_default"
+        android:listSelector="@android:color/transparent"
+        android:cacheColorHint="#0000"
+        android:divider="@null"
+        android:dividerHeight="5dp"
+        android:scrollbarStyle="outsideOverlay" >
+    </ListView>
+    
+    <RelativeLayout 
+        android:id="@+id/rl_bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/publisher_footer_bg" >
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edit_text_bg"
+            android:onClick="send"
+            android:text="回复" />
+
+        <EditText
+            android:id="@+id/et_send_status"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/btn_send"
+            android:background="@drawable/edit_text_bg"
+            android:singleLine="true"
+            android:textSize="18sp"
+            android:hint="在此输入回复内容" />
+    </RelativeLayout>
+
+</RelativeLayout>

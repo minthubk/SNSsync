@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fcfcfc"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/title_bar"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="首页"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/mm_title_btn_normal"
+            android:onClick="publishStatus"
+            android:text="发同步状态"
+            android:textColor="#fff"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <LinearLayout 
+        android:background="@drawable/mm_listitem_grey_normal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="260dp"
+            android:layout_height="60dp"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:onClick="startSina" >
+
+            <ImageView
+                android:id="@+id/head"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="5dp"
+                android:src="@drawable/sina" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/head"
+                android:padding="7dp"
+                android:text="新浪微博[需申请内测]"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/token_state_sina"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@id/head"
+                android:padding="7dp"
+                android:text="未授权"
+                android:textColor="#666" />
+        </RelativeLayout>
+
+        <ImageView
+            android:background="@android:color/darker_gray"
+            android:id="@+id/token_state_sina_img"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:paddingRight="5dp"
+            android:src="@drawable/cancel"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+    
+    <LinearLayout android:background="@drawable/mm_listitem_grey_normal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="260dp"
+            android:layout_height="60dp"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:onClick="startTencent" >
+
+            <ImageView
+                android:id="@+id/head"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="5dp"
+                android:src="@drawable/tencent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/head"
+                android:padding="7dp"
+                android:text="腾讯微博"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/token_state_tencent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@id/head"
+                android:padding="7dp"
+                android:text="未授权"
+                android:textColor="#666" />
+        </RelativeLayout>
+
+        <ImageView
+            android:background="@android:color/darker_gray"
+            android:id="@+id/token_state_tencent_img"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:paddingRight="5dp"
+            android:src="@drawable/cancel"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+    
+    <LinearLayout android:background="@drawable/mm_listitem_grey_normal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="260dp"
+            android:layout_height="60dp"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:onClick="startRenren" >
+
+            <ImageView
+                android:id="@+id/head"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="5dp"
+                android:src="@drawable/renren" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/head"
+                android:padding="7dp"
+                android:text="人人网"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/token_state_renren"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@id/head"
+                android:padding="7dp"
+                android:text="未授权"
+                android:textColor="#666" />
+        </RelativeLayout>
+
+        <ImageView
+            android:background="@android:color/darker_gray"
+            android:id="@+id/token_state_renren_img"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:paddingRight="5dp"
+            android:src="@drawable/cancel"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+    
+    <LinearLayout android:background="@drawable/mm_listitem_grey_normal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="260dp"
+            android:layout_height="60dp"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:onClick="startQzone" >
+
+            <ImageView
+                android:id="@+id/head"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="5dp"
+                android:src="@drawable/qzone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/head"
+                android:padding="7dp"
+                android:text="QQ空间"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/token_state_qzone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@id/head"
+                android:padding="7dp"
+                android:text="未授权"
+                android:textColor="#666" />
+        </RelativeLayout>
+
+        <ImageView
+            android:background="@android:color/darker_gray"
+            android:id="@+id/token_state_qzone_img"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:paddingRight="5dp"
+            android:src="@drawable/cancel"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+</LinearLayout>

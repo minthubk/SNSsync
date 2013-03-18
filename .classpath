@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry kind="lib" path="libs/weibo.sdk.android.sso.jar"/>
+	<classpathentry kind="lib" path="libs/httpmime-4.1.3.jar"/>
+	<classpathentry kind="lib" path="libs/Android_SDK_v1.2.jar"/>
+	<classpathentry kind="lib" path="libs/renren_android_connect.jar"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

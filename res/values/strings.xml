@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SNS同步助手</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="boring">null</string>
+
+    <string name="menu_home">首页</string>
+    <string name="menu_profile">广场</string>
+    <string name="menu_message">消息</string>
+    <string name="menu_settings">设置</string>
+</resources>

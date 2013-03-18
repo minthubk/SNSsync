@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fcfcfc"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/title_bar"
+        android:gravity="center_horizontal|center_vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </LinearLayout>
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/preference_first_item"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:onClick="setStatusCount" >
+
+        <TextView
+            android:id="@+id/tv_settings_title_status_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="每页微博的数量"
+            android:textColor="#000"
+            android:textSize="17sp" />
+        
+        <TextView 
+            android:id="@+id/tv_settings_status_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FF0000"
+            android:layout_toRightOf="@+id/tv_settings_title_status_count"
+            android:layout_centerVertical="true"
+            android:text="5"
+            android:textSize="17sp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:scaleType="matrix"
+            android:src="@drawable/mm_submenu" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/preference_last_item"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:onClick="setPicMode" >
+
+        <TextView
+            android:id="@+id/tv_settings_title_pic_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="图片模式"
+            android:textColor="#000"
+            android:textSize="17sp" />
+        
+         <TextView 
+             android:id="@+id/tv_settings_pic_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FF0000"
+            android:layout_toRightOf="@+id/tv_settings_title_pic_mode"
+            android:layout_centerVertical="true"
+            android:text="有图"
+            android:textSize="15sp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="matrix"
+            android:src="@drawable/mm_submenu" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/preference_single_item"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:onClick="about" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="关于"
+            android:textColor="#000"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="matrix"
+            android:src="@drawable/mm_submenu" />
+    </RelativeLayout>
+    
+</LinearLayout>

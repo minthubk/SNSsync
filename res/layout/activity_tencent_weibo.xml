@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rl_sendbox"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_head"
+        android:background="@drawable/publisher_footer_bg" >
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edit_text_bg"
+            android:onClick="send"
+            android:text="发表" />
+
+        <EditText
+            android:id="@+id/et_send_status"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/btn_send"
+            android:background="@drawable/edit_text_bg"
+            android:hint="说说你在做什么？"
+            android:singleLine="true"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/timeline_listview"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_head"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/title_bar"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/mm_title_btn_back"
+            android:onClick="back"
+            android:text="返回"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:onClick="goTop"
+            android:text="腾讯微博"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <Button 
+			    android:layout_width="67dp" 
+        		android:layout_height="wrap_content"
+        		android:layout_alignParentRight="true" 
+        		android:layout_centerVertical="true"
+        		android:layout_marginRight="5dp"
+        		android:text="刷新"
+        		android:textColor="#fff"
+        		android:textSize="15dp"
+				android:background="@drawable/mm_title_btn_normal"
+				android:onClick="refresh"
+			    />
+    </RelativeLayout>
+
+</RelativeLayout>
