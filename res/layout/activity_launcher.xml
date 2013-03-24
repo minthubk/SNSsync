@@ -5,7 +5,7 @@
     android:orientation="vertical" >
     
 	<ImageView android:contentDescription="@string/boring"
-	    android:src="@drawable/welcome"
+	    android:src="@drawable/chat_bg_default"
 	    android:layout_width="fill_parent"
 	    android:layout_height="fill_parent"/>
     

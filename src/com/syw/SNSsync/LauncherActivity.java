@@ -59,7 +59,7 @@ public class LauncherActivity extends LauncherBaseActivity {
 				WindowManager.LayoutParams.FLAG_FULLSCREEN);
 		super.onCreate(savedInstanceState);
 		// 设置内容视图
-		this.setContentView(R.layout.activity_launcher);
+//		this.setContentView(R.layout.activity_launcher);
 
 		handler.sendEmptyMessage(0);
 	}
