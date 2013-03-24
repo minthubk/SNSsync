@@ -8,13 +8,9 @@ import java.util.List;
 
 import com.syw.SNSsync.R;
 import com.syw.SNSsync.entity.Tweet;
-import com.syw.SNSsync.utils.AsyncBitmapLoader;
-import com.syw.SNSsync.utils.AsyncImageLoader;
 import com.syw.SNSsync.utils.ImageDownloader;
 
 import android.content.Context;
-import android.graphics.Bitmap;
-import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
