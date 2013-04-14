@@ -80,7 +80,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
-        android:text="Google Code：http://code.google.com/p/snssync/"
+        android:text="说明：本软件的UI仿照了微信，Android开发学习用。本软件已开源，项目托管在Github上"
         android:textSize="15sp"/>
     
     <TextView 
@@ -88,7 +88,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
-        android:text="说明：本软件的UI参照了网上 @小黑 的仿微信开源项目"
+        android:text="Github地址：https://github.com/songyouwei/snssync/"
         android:textSize="15sp"/>
     
 </LinearLayout>

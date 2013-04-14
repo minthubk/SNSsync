@@ -52,7 +52,7 @@ public class Constants {
 	}
 	
 	public static final class tencent {
-		 public static String redirectUri="http://apk.hiapk.com/html/2013/02/1196370.html";                   
+		 public static String redirectUri="http://static.apk.hiapk.com/html/2013/03/1306410.html";                   
 		 public static String clientId = "801308663"; 
 		 public static String clientSecret="17737dd2e12fd3a928eab9893a03eb80";
 	}
